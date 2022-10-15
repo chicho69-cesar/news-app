@@ -19,9 +19,10 @@ class NewsService extends ChangeNotifier {
       'apiKey': _apiKey,
       'country': 'mx'
     });
-    // final response = await http.get(url);
+    /* final response = await http.get(url);
 
-    // final newsResponse = NewsResponse.fromJson(response.body);
-    // notifyListeners();
+    final newsResponse = NewsResponse.fromJson(response.body);
+    headLines.addAll(newsResponse.articles);
+    notifyListeners(); */
   }
 }
