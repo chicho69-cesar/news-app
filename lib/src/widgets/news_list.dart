@@ -103,6 +103,12 @@ class _CardImage extends StatelessWidget {
         child: Container(
           child: newsItem.urlToImage != null
             ? FadeInImage(
+              imageErrorBuilder: (context, error, stackTrace) {
+                return Text(
+                  'Image not load',
+                  style: TextStyle(fontSize: 25, color: myTheme.primaryColor),
+                );
+              },
               placeholder: const AssetImage('assets/img/giphy.gif'),
               image: NetworkImage(newsItem.urlToImage!),
             )
