@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/src/theme/theme.dart';
-import 'package:news_app/src/widgets/news_list.dart';
 
 import 'package:provider/provider.dart';
 
 import 'package:news_app/src/models/category_model.dart';
 import 'package:news_app/src/services/news_service.dart';
+import 'package:news_app/src/theme/theme.dart';
+import 'package:news_app/src/widgets/news_list.dart';
 
 class Tab2Page extends StatefulWidget {
   const Tab2Page({Key? key}) : super(key: key);
